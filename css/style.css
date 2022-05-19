@@ -1,0 +1,125 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body { 
+  color: lightpink;
+  background-color: rgb(235, 233, 233);
+}
+main {
+  background-image: /Users/taylorgjean/Desktop/Website Portfolio/Cuisine Restaurant Layout/Screen Shot 2022-03-02 at 10.49.55 PM.png;
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'tangerine';
+}
+h2{
+  font-size: 50px;
+  font-family: 'tangerine';
+}
+header{
+  font-family:'smooch sans';
+  font-size: 22px;
+}
+a{
+  color: black;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav{
+  width: 100%;
+  display: flex;
+  justify-content:right;
+
+}
+header li, a{
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+  margin: 0 15px;
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+}
+h1{
+  width: 30%;
+  padding: 50px 50px;
+  margin: 50px; 50px;
+}
+h1 + form{
+  width: 15%;
+  margin: 0 50px;
+}
+.food1 {
+  width: 50%;
+  padding: 0 25px 0 25px;
+  margin: 20px 20px;
+}
+main span{
+  margin: 0 50px;
+}
+
+#zebra{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#zebra img{
+  width: 500px;
+  margin: 25px 25px;
+}
+#zebra section + section {
+  margin: 25px 25px;
+}
+main + section a{
+  font-size: large;
+  font-style:italic;
+  font-weight:900;
+}
+section + section > a{
+  display: flex;
+  justify-content: center;
+}
+
+section + section > h2{
+  display: flex;
+  justify-content: center;
+}
+section + section li{
+  list-style: none;
+  display: inline;
+  margin-left: 120px;
+}
+.orderOnline img{
+  width: 15%;
+  height: 200px;
+  margin: 0 25px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
